@@ -1,0 +1,20 @@
+PODS:
+  - p2.OAuth2 (4.0.1)
+  - SwiftyJSON (4.1.0)
+
+DEPENDENCIES:
+  - p2.OAuth2
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - p2.OAuth2
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  p2.OAuth2: fdc2effef37793a8f775dd4760bc4c1ea906c956
+  SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
+
+PODFILE CHECKSUM: ebe651d5f51cc4da6d28c3040bfa42439c9af151
+
+COCOAPODS: 1.5.0

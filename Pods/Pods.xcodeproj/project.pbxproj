@@ -1,0 +1,1213 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04460BEBC4AA15A8ED913ADFF369086C /* OAuth2Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3EB8326DF2B6E8F281A756D1B7052D /* OAuth2Logger.swift */; };
+		07F2A8C963908BAA16678C5F863C3698 /* OAuth2CustomAuthorizer+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1304BF3B8978E31C787B9E46433CFA /* OAuth2CustomAuthorizer+iOS.swift */; };
+		09510457DC2AFAF0CD9BD8A328FA9D8E /* OAuth2RequestPerformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD4601B3DC92DFD6B06472686245BE2 /* OAuth2RequestPerformer.swift */; };
+		1A1CE4C08DD07FB8172885C3B3946199 /* OAuth2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B941483FDB83B3ECBDBED7854A8B8F6 /* OAuth2.swift */; };
+		1ECF5BF3F58E827A86671BB5F43A3F6C /* OAuth2Securable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D7FD8EF2815F5FDA40295C657A2E8F /* OAuth2Securable.swift */; };
+		20E9B6355F6B4E520B07404CEF2865B1 /* OAuth2ImplicitGrant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A474728CE72F3DA67B4C8458892170D9 /* OAuth2ImplicitGrant.swift */; };
+		220942F3BA5AA539E8CC888F289C2123 /* OAuth2Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD4E724F49F8EAEF7B2D8786128B805 /* OAuth2Response.swift */; };
+		2355056918C6803C037B2229A4C3ECF8 /* OAuth2CodeGrantFacebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C307401AF16FAF4F345827C751829D /* OAuth2CodeGrantFacebook.swift */; };
+		26D34729E612FAFA1475CAD66E3D1747 /* OAuth2KeychainAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C55AC89F8DBC9F3B1C0B58D97E5B8F7 /* OAuth2KeychainAccount.swift */; };
+		273B75FA5E7E5012EBDFE15C74F2990D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B2E22F0C15FA86450EA1E7B3BCF4E19 /* Foundation.framework */; };
+		401843BECD354D037793A51BE9CA31D4 /* OAuth2ClientCredentialsReddit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE55CD8696A22B5D84040BC0F570C62 /* OAuth2ClientCredentialsReddit.swift */; };
+		45C70001311261A434EFCBAD2FDDBADC /* OAuth2Authorizer+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EAF514F09D71BB6ADA09EE561F736F /* OAuth2Authorizer+iOS.swift */; };
+		49B0FC48074234E25C103ED8DCE42FE8 /* OAuth2CodeGrantLinkedIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BDF63873177C8771BABF8523D8D0C3 /* OAuth2CodeGrantLinkedIn.swift */; };
+		4A8A5BBF9FAE61D5E6D3FB31C68BD393 /* OAuth2CustomAuthorizerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D53A48AA9A4F97C8E24AA5D8B11AF7 /* OAuth2CustomAuthorizerUI.swift */; };
+		4DEA2A8CB60FF265DAC91CCA24D98B19 /* OAuth2Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A337F65C7F85623BB56176CACF3A630 /* OAuth2Error.swift */; };
+		4EA15AB63765FCCB322D456B2FA7E86A /* OAuth2WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0704C9E07309727E27C50957E90165ED /* OAuth2WebViewController.swift */; };
+		4FF92FED760D6E8319677A6296D89239 /* OAuth2AuthConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C934EB84E4A2836DAD590A1F9E0C5C07 /* OAuth2AuthConfig.swift */; };
+		535D7C94DA870C225B8729B302C4FE24 /* OAuth2CodeGrantAzure.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2FAD9A97F26BB911D20E9850974890 /* OAuth2CodeGrantAzure.swift */; };
+		54E50F79A7B77EB92EFD0E3FE6C478F2 /* Pods-email-to-calendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FF3860F422C72516B07B5DDF4CC57B /* Pods-email-to-calendar-dummy.m */; };
+		705474263F087D04F875CA7CAC2E97BA /* Pods-email-to-calendarTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 06D3500E6FCD218AC8979A92C5CF61E3 /* Pods-email-to-calendarTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		726DA3C6B9CC16A489534A9A8C9F2EED /* Pods-email-to-calendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C16E3E6C6E11C65B33F1274B99459A7 /* Pods-email-to-calendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		796F9F73AFBF07E9B6EC763352578547 /* OAuth2DataLoaderSessionTaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF362CF8A5ACA0DD9B632D346FC28FE /* OAuth2DataLoaderSessionTaskDelegate.swift */; };
+		7F1CFEEC47875FCA7F8897BF9D16D143 /* OAuth2CodeGrant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E15C4762A7B38EA6B9A7C0BDF9FFB6A /* OAuth2CodeGrant.swift */; };
+		847297965254C6356B97C38E80C2C9A4 /* Pods-email-to-calendarUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF00A379C74FB9DB80934FEEBDADF54 /* Pods-email-to-calendarUITests-dummy.m */; };
+		87738DF9A4DEDCBF52325FD54E1D8DA2 /* OAuth2ClientCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9484A3A72D37B2D71EFD2102C0F5563 /* OAuth2ClientCredentials.swift */; };
+		8DD5443730327E91278515198B4A4C33 /* Pods-email-to-calendarTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8A8ED94BDE8BC0D441F214A6C117E6 /* Pods-email-to-calendarTests-dummy.m */; };
+		93A5B8720094959D340457E57C18CA49 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 520B685F04D419F47A339B0CE16980F5 /* SwiftyJSON-dummy.m */; };
+		9836D57AB019C8A26009B8A65E3ADE60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B2E22F0C15FA86450EA1E7B3BCF4E19 /* Foundation.framework */; };
+		9C001AFF697F797F5096922545E552D0 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F89955D86A09250DD9AA9674E2075B /* extensions.swift */; };
+		B4C3402F29859D4BF4F26A08ECB3B588 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11499F1B0AD1B5C9D1801752597482D0 /* Keychain.swift */; };
+		BF04DD3C793DE52E4D5FFB9374310349 /* OAuth2CodeGrantBasicAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5650F5E8B48012F755C610770BF8C185 /* OAuth2CodeGrantBasicAuth.swift */; };
+		C38D91C035F0CE8DB1DC3A6D919F9E2D /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 177602236F6F4D7BE185B821A862BC6D /* SafariServices.framework */; };
+		D512C43B9E7318F04CABDB84507FD24B /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3F1A2EEC02C960ECF3E1BAE1C85C94 /* SwiftyJSON.swift */; };
+		D676EAB1DC3D4334360FECB7A9EF967B /* OAuth2DynReg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3AAE01F105905D38BD6CFBA4E52B4E /* OAuth2DynReg.swift */; };
+		DAADCA0717B2FE3CD732B3BF7CB76CDE /* OAuth2AuthRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A83DB69DB06DF0BB8DB8FFE2E48FFC /* OAuth2AuthRequest.swift */; };
+		DB735B23877FBD274E56CC18A0A593B7 /* OAuth2Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745DCF5D3384DC812B3B9E07F6AB7AF4 /* OAuth2Base.swift */; };
+		E08C601EC9263DF43076509ABA7666F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B2E22F0C15FA86450EA1E7B3BCF4E19 /* Foundation.framework */; };
+		E1C75217B7D2CDED554EBA156BE765B9 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A9EDF640BA36B5998AFFFF08A4ABD4D2 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D95B893326D4A6BDB6EED45ED8884E /* p2.OAuth2-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 62CA040837518B4B957AD428DAB14A37 /* p2.OAuth2-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4DBD6FD7B2FB7B51A03ECEEA4C4DE0B /* OAuth2Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344707DA2E2DC2D58D85EF314FA0A599 /* OAuth2Requestable.swift */; };
+		E7E6253434407F535FB2A284CF8DBBAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B2E22F0C15FA86450EA1E7B3BCF4E19 /* Foundation.framework */; };
+		EA266D05C93DDC91544F9B45AA5E7018 /* OAuth2DebugURLSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475656D00A31C61169CF027ABAE65361 /* OAuth2DebugURLSessionDelegate.swift */; };
+		EC4BD6E7CA38A4AB67A48F1DC2442F2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B2E22F0C15FA86450EA1E7B3BCF4E19 /* Foundation.framework */; };
+		F04498D16E3067EE84FADF219EE9A681 /* OAuth2PasswordGrant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6978BEBAEBA288599C66D4327979931F /* OAuth2PasswordGrant.swift */; };
+		F4107F7E282091A3C4ABB1A3B1CB8EF8 /* OAuth2DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC545380A5F48DA195522396595C5E0F /* OAuth2DataLoader.swift */; };
+		F59B56CC3B962B893B27121E7EB8FE3B /* OAuth2DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01F0CEFE350338320AC0721F0E940FC /* OAuth2DataRequest.swift */; };
+		F7B91560827800D83FA65920542682A8 /* p2.OAuth2-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D996DBD7A9EF402E13B2084A573B65E0 /* p2.OAuth2-dummy.m */; };
+		FB374781A63DABB41F1E475A755CCC1B /* OAuth2ClientConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A1E0AF2E073474106A2C80E58FD4CB /* OAuth2ClientConfig.swift */; };
+		FBE40DBA2239200DFFB61BA15568F4BA /* OAuth2CodeGrantNoTokenType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E0FC3735EDE35073C30FAFE1F4E0EA /* OAuth2CodeGrantNoTokenType.swift */; };
+		FD0609C89501AD5E1A720F0D3AF8E134 /* Pods-email-to-calendarUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F9D945BF6E9008A62C1C0605753A912B /* Pods-email-to-calendarUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD79919D27FE73C0D57909A589BA0223 /* OAuth2AuthorizerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D612A8273475A705F19AD0A9631C57 /* OAuth2AuthorizerUI.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		124E84BDEF680A65ACD49EA43AECA22B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCF81A747842819B58FE6D34C2FE725E;
+			remoteInfo = "Pods-email-to-calendar";
+		};
+		3A64B6220ADFE4CF54AB49421612D1C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A053B4D5BF2CB89E9CC64D3BAF61DBAA;
+			remoteInfo = SwiftyJSON;
+		};
+		4E8A85CCA4E1BFED18AE9BDE363A3317 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCF81A747842819B58FE6D34C2FE725E;
+			remoteInfo = "Pods-email-to-calendar";
+		};
+		8DD0ABCF8A45E0869E4B617A88BFB2B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29EEEC9E0608911AEE79862A99EEA2B5;
+			remoteInfo = p2.OAuth2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		024BB149798C843349DE1BA2CA75A1AE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05020F504005C307B7F4EE754EE60272 /* Pods-email-to-calendarUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-email-to-calendarUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		06D3500E6FCD218AC8979A92C5CF61E3 /* Pods-email-to-calendarTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-email-to-calendarTests-umbrella.h"; sourceTree = "<group>"; };
+		0704C9E07309727E27C50957E90165ED /* OAuth2WebViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2WebViewController.swift; path = Sources/iOS/OAuth2WebViewController.swift; sourceTree = "<group>"; };
+		09A83DB69DB06DF0BB8DB8FFE2E48FFC /* OAuth2AuthRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2AuthRequest.swift; path = Sources/Base/OAuth2AuthRequest.swift; sourceTree = "<group>"; };
+		0D1304BF3B8978E31C787B9E46433CFA /* OAuth2CustomAuthorizer+iOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OAuth2CustomAuthorizer+iOS.swift"; path = "Sources/iOS/OAuth2CustomAuthorizer+iOS.swift"; sourceTree = "<group>"; };
+		0E5A008D829612FD6097461A15FFFFAA /* p2.OAuth2.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = p2.OAuth2.xcconfig; sourceTree = "<group>"; };
+		11499F1B0AD1B5C9D1801752597482D0 /* Keychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keychain.swift; path = SwiftKeychain/Keychain/Keychain.swift; sourceTree = "<group>"; };
+		120E3ADEC94EBDCDB4A906E18AF288E2 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		13E0FC3735EDE35073C30FAFE1F4E0EA /* OAuth2CodeGrantNoTokenType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2CodeGrantNoTokenType.swift; path = Sources/Flows/OAuth2CodeGrantNoTokenType.swift; sourceTree = "<group>"; };
+		177602236F6F4D7BE185B821A862BC6D /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/SafariServices.framework; sourceTree = DEVELOPER_DIR; };
+		1A09A81458230418136291B4A90F6793 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		1B2E22F0C15FA86450EA1E7B3BCF4E19 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		1BE55CD8696A22B5D84040BC0F570C62 /* OAuth2ClientCredentialsReddit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2ClientCredentialsReddit.swift; path = Sources/Flows/OAuth2ClientCredentialsReddit.swift; sourceTree = "<group>"; };
+		1D3EB8326DF2B6E8F281A756D1B7052D /* OAuth2Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2Logger.swift; path = Sources/Base/OAuth2Logger.swift; sourceTree = "<group>"; };
+		1E8A8ED94BDE8BC0D441F214A6C117E6 /* Pods-email-to-calendarTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-email-to-calendarTests-dummy.m"; sourceTree = "<group>"; };
+		20CDB88D371F78C6B44C0BC44E5C629A /* p2_OAuth2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = p2_OAuth2.framework; path = p2.OAuth2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		291EE59DAB5E71529791EA060BB5AF0B /* Pods-email-to-calendarUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-email-to-calendarUITests.modulemap"; sourceTree = "<group>"; };
+		2A337F65C7F85623BB56176CACF3A630 /* OAuth2Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2Error.swift; path = Sources/Base/OAuth2Error.swift; sourceTree = "<group>"; };
+		2C16E3E6C6E11C65B33F1274B99459A7 /* Pods-email-to-calendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-email-to-calendar-umbrella.h"; sourceTree = "<group>"; };
+		2FD4601B3DC92DFD6B06472686245BE2 /* OAuth2RequestPerformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2RequestPerformer.swift; path = Sources/Base/OAuth2RequestPerformer.swift; sourceTree = "<group>"; };
+		344707DA2E2DC2D58D85EF314FA0A599 /* OAuth2Requestable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2Requestable.swift; path = Sources/Base/OAuth2Requestable.swift; sourceTree = "<group>"; };
+		3474DCC1A411BBC9F9C0F69D376B9C74 /* Pods-email-to-calendarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-email-to-calendarUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3E3B1001E4F0DA2E6DBE5B054666623D /* p2.OAuth2.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = p2.OAuth2.modulemap; sourceTree = "<group>"; };
+		4257F1808E0BBBD87789B753DB0D8F83 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		475656D00A31C61169CF027ABAE65361 /* OAuth2DebugURLSessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2DebugURLSessionDelegate.swift; path = Sources/Base/OAuth2DebugURLSessionDelegate.swift; sourceTree = "<group>"; };
+		4BD4E724F49F8EAEF7B2D8786128B805 /* OAuth2Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2Response.swift; path = Sources/Base/OAuth2Response.swift; sourceTree = "<group>"; };
+		4C55AC89F8DBC9F3B1C0B58D97E5B8F7 /* OAuth2KeychainAccount.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2KeychainAccount.swift; path = Sources/Base/OAuth2KeychainAccount.swift; sourceTree = "<group>"; };
+		4C6FFBC37BF803ED977CEC8AD2F4FED5 /* Pods-email-to-calendarTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-email-to-calendarTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4DC1314A3EDB17C9D3C53EEB7E2831D9 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		4ECD9483F7DE257AD06D390D3EC2B155 /* Pods-email-to-calendar-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-email-to-calendar-frameworks.sh"; sourceTree = "<group>"; };
+		520B685F04D419F47A339B0CE16980F5 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		5650F5E8B48012F755C610770BF8C185 /* OAuth2CodeGrantBasicAuth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2CodeGrantBasicAuth.swift; path = Sources/Flows/OAuth2CodeGrantBasicAuth.swift; sourceTree = "<group>"; };
+		57A1E0AF2E073474106A2C80E58FD4CB /* OAuth2ClientConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2ClientConfig.swift; path = Sources/Base/OAuth2ClientConfig.swift; sourceTree = "<group>"; };
+		5854CED83A69B0CC1FD8C46E64A98D5F /* Pods-email-to-calendarTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-email-to-calendarTests.modulemap"; sourceTree = "<group>"; };
+		59EAF514F09D71BB6ADA09EE561F736F /* OAuth2Authorizer+iOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OAuth2Authorizer+iOS.swift"; path = "Sources/iOS/OAuth2Authorizer+iOS.swift"; sourceTree = "<group>"; };
+		60A7B1ECBB0FA00BF9C9EE696CA168A8 /* Pods-email-to-calendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-email-to-calendar.modulemap"; sourceTree = "<group>"; };
+		60D53A48AA9A4F97C8E24AA5D8B11AF7 /* OAuth2CustomAuthorizerUI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2CustomAuthorizerUI.swift; path = Sources/Base/OAuth2CustomAuthorizerUI.swift; sourceTree = "<group>"; };
+		62CA040837518B4B957AD428DAB14A37 /* p2.OAuth2-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "p2.OAuth2-umbrella.h"; sourceTree = "<group>"; };
+		6978BEBAEBA288599C66D4327979931F /* OAuth2PasswordGrant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2PasswordGrant.swift; path = Sources/Flows/OAuth2PasswordGrant.swift; sourceTree = "<group>"; };
+		69C307401AF16FAF4F345827C751829D /* OAuth2CodeGrantFacebook.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2CodeGrantFacebook.swift; path = Sources/Flows/OAuth2CodeGrantFacebook.swift; sourceTree = "<group>"; };
+		6A1DFBAB636A29732BF99B64E67BF384 /* Pods_email_to_calendarUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_email_to_calendarUITests.framework; path = "Pods-email-to-calendarUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E10D38B6B67056F72B7D4218590B0FE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6ECAFA9B4C80677F1F504775A5A89AA4 /* Pods-email-to-calendarTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-email-to-calendarTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		745DCF5D3384DC812B3B9E07F6AB7AF4 /* OAuth2Base.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2Base.swift; path = Sources/Base/OAuth2Base.swift; sourceTree = "<group>"; };
+		7AF362CF8A5ACA0DD9B632D346FC28FE /* OAuth2DataLoaderSessionTaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2DataLoaderSessionTaskDelegate.swift; path = Sources/DataLoader/OAuth2DataLoaderSessionTaskDelegate.swift; sourceTree = "<group>"; };
+		7B941483FDB83B3ECBDBED7854A8B8F6 /* OAuth2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2.swift; path = Sources/Flows/OAuth2.swift; sourceTree = "<group>"; };
+		7EECD176985FF49E2B66CA2746D16A3F /* Pods_email_to_calendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_email_to_calendar.framework; path = "Pods-email-to-calendar.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		82472117EFDECE38CECDAA2BEB50DD0D /* Pods-email-to-calendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-email-to-calendar.release.xcconfig"; sourceTree = "<group>"; };
+		84E2097A0CD31117494A44CBA67BA394 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		878999FEE5FE485B4684258FC18A0084 /* Pods-email-to-calendar-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-email-to-calendar-acknowledgements.plist"; sourceTree = "<group>"; };
+		88BDF63873177C8771BABF8523D8D0C3 /* OAuth2CodeGrantLinkedIn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2CodeGrantLinkedIn.swift; path = Sources/Flows/OAuth2CodeGrantLinkedIn.swift; sourceTree = "<group>"; };
+		8B149D5B91A276173985259BCE6A3AB7 /* p2.OAuth2-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "p2.OAuth2-prefix.pch"; sourceTree = "<group>"; };
+		8E15C4762A7B38EA6B9A7C0BDF9FFB6A /* OAuth2CodeGrant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2CodeGrant.swift; path = Sources/Flows/OAuth2CodeGrant.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93B163AD6DFF8AC74D5078A24E19F3C5 /* Pods-email-to-calendarTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-email-to-calendarTests-frameworks.sh"; sourceTree = "<group>"; };
+		972E66605E2797C66B71555FC52028F8 /* Pods-email-to-calendar-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-email-to-calendar-acknowledgements.markdown"; sourceTree = "<group>"; };
+		98D612A8273475A705F19AD0A9631C57 /* OAuth2AuthorizerUI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2AuthorizerUI.swift; path = Sources/Base/OAuth2AuthorizerUI.swift; sourceTree = "<group>"; };
+		9A3AAE01F105905D38BD6CFBA4E52B4E /* OAuth2DynReg.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2DynReg.swift; path = Sources/Flows/OAuth2DynReg.swift; sourceTree = "<group>"; };
+		A01F0CEFE350338320AC0721F0E940FC /* OAuth2DataRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2DataRequest.swift; path = Sources/DataLoader/OAuth2DataRequest.swift; sourceTree = "<group>"; };
+		A2FF3860F422C72516B07B5DDF4CC57B /* Pods-email-to-calendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-email-to-calendar-dummy.m"; sourceTree = "<group>"; };
+		A474728CE72F3DA67B4C8458892170D9 /* OAuth2ImplicitGrant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2ImplicitGrant.swift; path = Sources/Flows/OAuth2ImplicitGrant.swift; sourceTree = "<group>"; };
+		A9484A3A72D37B2D71EFD2102C0F5563 /* OAuth2ClientCredentials.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2ClientCredentials.swift; path = Sources/Flows/OAuth2ClientCredentials.swift; sourceTree = "<group>"; };
+		A9EDF640BA36B5998AFFFF08A4ABD4D2 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		AB3F1A2EEC02C960ECF3E1BAE1C85C94 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		AC545380A5F48DA195522396595C5E0F /* OAuth2DataLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2DataLoader.swift; path = Sources/DataLoader/OAuth2DataLoader.swift; sourceTree = "<group>"; };
+		B10A0C57847723602329EE56DB6394F2 /* Pods-email-to-calendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-email-to-calendar.debug.xcconfig"; sourceTree = "<group>"; };
+		B41353FEBCF7C6F0B24661A208693779 /* Pods-email-to-calendar-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-email-to-calendar-resources.sh"; sourceTree = "<group>"; };
+		B7590CB5EAE6940D7F6D8623D1D5CE73 /* Pods-email-to-calendarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-email-to-calendarTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B8D723419823A4C2C5DC892E2DA8FFAE /* Pods-email-to-calendarUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-email-to-calendarUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C6312F0B190A3F97AD5BCFF3D9E847EB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C934EB84E4A2836DAD590A1F9E0C5C07 /* OAuth2AuthConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2AuthConfig.swift; path = Sources/Base/OAuth2AuthConfig.swift; sourceTree = "<group>"; };
+		CC2FAD9A97F26BB911D20E9850974890 /* OAuth2CodeGrantAzure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2CodeGrantAzure.swift; path = Sources/Flows/OAuth2CodeGrantAzure.swift; sourceTree = "<group>"; };
+		D066B137E7BF03732D1F813F3BFB286C /* Pods-email-to-calendarUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-email-to-calendarUITests-frameworks.sh"; sourceTree = "<group>"; };
+		D504AFFD9CE800113089BFF4A2158483 /* Pods-email-to-calendarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-email-to-calendarUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D996DBD7A9EF402E13B2084A573B65E0 /* p2.OAuth2-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "p2.OAuth2-dummy.m"; sourceTree = "<group>"; };
+		E8D43ACF56940954EE5CB8D7C085ACBB /* Pods-email-to-calendarTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-email-to-calendarTests-resources.sh"; sourceTree = "<group>"; };
+		EA22BF64A672DFFB1AA4A576E716A1AC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECF00A379C74FB9DB80934FEEBDADF54 /* Pods-email-to-calendarUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-email-to-calendarUITests-dummy.m"; sourceTree = "<group>"; };
+		EF1EBA3164F2E4A143F18DC4BF17A062 /* Pods-email-to-calendarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-email-to-calendarTests.release.xcconfig"; sourceTree = "<group>"; };
+		F1AACFE300B66455936CEAD6B8A3E630 /* Pods_email_to_calendarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_email_to_calendarTests.framework; path = "Pods-email-to-calendarTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2D7FD8EF2815F5FDA40295C657A2E8F /* OAuth2Securable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2Securable.swift; path = Sources/Base/OAuth2Securable.swift; sourceTree = "<group>"; };
+		F5F89955D86A09250DD9AA9674E2075B /* extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = extensions.swift; path = Sources/Base/extensions.swift; sourceTree = "<group>"; };
+		F9D945BF6E9008A62C1C0605753A912B /* Pods-email-to-calendarUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-email-to-calendarUITests-umbrella.h"; sourceTree = "<group>"; };
+		FA112D4BEC21BDE2942DB52690C3D32D /* Pods-email-to-calendarUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-email-to-calendarUITests-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		184C10D3BE648B8139CEDF10122BC241 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E08C601EC9263DF43076509ABA7666F2 /* Foundation.framework in Frameworks */,
+				C38D91C035F0CE8DB1DC3A6D919F9E2D /* SafariServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6652B669D498B43D247622D10DB2F59A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC4BD6E7CA38A4AB67A48F1DC2442F2C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81BF8F7489ADCF95FB87239C1CA9F5F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9836D57AB019C8A26009B8A65E3ADE60 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A202C314F5A7720155B87E40F439781F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				273B75FA5E7E5012EBDFE15C74F2990D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA473C5C59C2D5053FFCC321CEF4E581 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7E6253434407F535FB2A284CF8DBBAB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1721135208F78A462A943F4531B63AAD /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BDEDCF82DC7F38F6DC9320F98B0CC406 /* Pods-email-to-calendar */,
+				52F4582F33587A0EA0DFE91361C72289 /* Pods-email-to-calendarTests */,
+				70AF367E77AD2D39F5D9C1629A19F43B /* Pods-email-to-calendarUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		2BB6F7A9D39E503E122A45E63710A35C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20CDB88D371F78C6B44C0BC44E5C629A /* p2_OAuth2.framework */,
+				7EECD176985FF49E2B66CA2746D16A3F /* Pods_email_to_calendar.framework */,
+				F1AACFE300B66455936CEAD6B8A3E630 /* Pods_email_to_calendarTests.framework */,
+				6A1DFBAB636A29732BF99B64E67BF384 /* Pods_email_to_calendarUITests.framework */,
+				84E2097A0CD31117494A44CBA67BA394 /* SwiftyJSON.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CAD531D5AA8A6D0BD8B08CB70CD863B5 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52F4582F33587A0EA0DFE91361C72289 /* Pods-email-to-calendarTests */ = {
+			isa = PBXGroup;
+			children = (
+				024BB149798C843349DE1BA2CA75A1AE /* Info.plist */,
+				5854CED83A69B0CC1FD8C46E64A98D5F /* Pods-email-to-calendarTests.modulemap */,
+				4C6FFBC37BF803ED977CEC8AD2F4FED5 /* Pods-email-to-calendarTests-acknowledgements.markdown */,
+				6ECAFA9B4C80677F1F504775A5A89AA4 /* Pods-email-to-calendarTests-acknowledgements.plist */,
+				1E8A8ED94BDE8BC0D441F214A6C117E6 /* Pods-email-to-calendarTests-dummy.m */,
+				93B163AD6DFF8AC74D5078A24E19F3C5 /* Pods-email-to-calendarTests-frameworks.sh */,
+				E8D43ACF56940954EE5CB8D7C085ACBB /* Pods-email-to-calendarTests-resources.sh */,
+				06D3500E6FCD218AC8979A92C5CF61E3 /* Pods-email-to-calendarTests-umbrella.h */,
+				B7590CB5EAE6940D7F6D8623D1D5CE73 /* Pods-email-to-calendarTests.debug.xcconfig */,
+				EF1EBA3164F2E4A143F18DC4BF17A062 /* Pods-email-to-calendarTests.release.xcconfig */,
+			);
+			name = "Pods-email-to-calendarTests";
+			path = "Target Support Files/Pods-email-to-calendarTests";
+			sourceTree = "<group>";
+		};
+		70AF367E77AD2D39F5D9C1629A19F43B /* Pods-email-to-calendarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4257F1808E0BBBD87789B753DB0D8F83 /* Info.plist */,
+				291EE59DAB5E71529791EA060BB5AF0B /* Pods-email-to-calendarUITests.modulemap */,
+				B8D723419823A4C2C5DC892E2DA8FFAE /* Pods-email-to-calendarUITests-acknowledgements.markdown */,
+				05020F504005C307B7F4EE754EE60272 /* Pods-email-to-calendarUITests-acknowledgements.plist */,
+				ECF00A379C74FB9DB80934FEEBDADF54 /* Pods-email-to-calendarUITests-dummy.m */,
+				D066B137E7BF03732D1F813F3BFB286C /* Pods-email-to-calendarUITests-frameworks.sh */,
+				FA112D4BEC21BDE2942DB52690C3D32D /* Pods-email-to-calendarUITests-resources.sh */,
+				F9D945BF6E9008A62C1C0605753A912B /* Pods-email-to-calendarUITests-umbrella.h */,
+				3474DCC1A411BBC9F9C0F69D376B9C74 /* Pods-email-to-calendarUITests.debug.xcconfig */,
+				D504AFFD9CE800113089BFF4A2158483 /* Pods-email-to-calendarUITests.release.xcconfig */,
+			);
+			name = "Pods-email-to-calendarUITests";
+			path = "Target Support Files/Pods-email-to-calendarUITests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				9ACE858057FC97299D69BFFE77CA2E9D /* Pods */,
+				2BB6F7A9D39E503E122A45E63710A35C /* Products */,
+				1721135208F78A462A943F4531B63AAD /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9569D41645912873BB366F0AAB6902ED /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E10D38B6B67056F72B7D4218590B0FE /* Info.plist */,
+				3E3B1001E4F0DA2E6DBE5B054666623D /* p2.OAuth2.modulemap */,
+				0E5A008D829612FD6097461A15FFFFAA /* p2.OAuth2.xcconfig */,
+				D996DBD7A9EF402E13B2084A573B65E0 /* p2.OAuth2-dummy.m */,
+				8B149D5B91A276173985259BCE6A3AB7 /* p2.OAuth2-prefix.pch */,
+				62CA040837518B4B957AD428DAB14A37 /* p2.OAuth2-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/p2.OAuth2";
+			sourceTree = "<group>";
+		};
+		9ACE858057FC97299D69BFFE77CA2E9D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE023DDB5FA620C59259F48D117F45AF /* p2.OAuth2 */,
+				C9BCCD5646FC3F70CBC1933CCE40CBAC /* SwiftyJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BDEDCF82DC7F38F6DC9320F98B0CC406 /* Pods-email-to-calendar */ = {
+			isa = PBXGroup;
+			children = (
+				C6312F0B190A3F97AD5BCFF3D9E847EB /* Info.plist */,
+				60A7B1ECBB0FA00BF9C9EE696CA168A8 /* Pods-email-to-calendar.modulemap */,
+				972E66605E2797C66B71555FC52028F8 /* Pods-email-to-calendar-acknowledgements.markdown */,
+				878999FEE5FE485B4684258FC18A0084 /* Pods-email-to-calendar-acknowledgements.plist */,
+				A2FF3860F422C72516B07B5DDF4CC57B /* Pods-email-to-calendar-dummy.m */,
+				4ECD9483F7DE257AD06D390D3EC2B155 /* Pods-email-to-calendar-frameworks.sh */,
+				B41353FEBCF7C6F0B24661A208693779 /* Pods-email-to-calendar-resources.sh */,
+				2C16E3E6C6E11C65B33F1274B99459A7 /* Pods-email-to-calendar-umbrella.h */,
+				B10A0C57847723602329EE56DB6394F2 /* Pods-email-to-calendar.debug.xcconfig */,
+				82472117EFDECE38CECDAA2BEB50DD0D /* Pods-email-to-calendar.release.xcconfig */,
+			);
+			name = "Pods-email-to-calendar";
+			path = "Target Support Files/Pods-email-to-calendar";
+			sourceTree = "<group>";
+		};
+		C9BCCD5646FC3F70CBC1933CCE40CBAC /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				AB3F1A2EEC02C960ECF3E1BAE1C85C94 /* SwiftyJSON.swift */,
+				F6D01BFDC6FF88B64D7E27EFCA9575B0 /* Support Files */,
+			);
+			name = SwiftyJSON;
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		CAD531D5AA8A6D0BD8B08CB70CD863B5 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1B2E22F0C15FA86450EA1E7B3BCF4E19 /* Foundation.framework */,
+				177602236F6F4D7BE185B821A862BC6D /* SafariServices.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		EE023DDB5FA620C59259F48D117F45AF /* p2.OAuth2 */ = {
+			isa = PBXGroup;
+			children = (
+				F5F89955D86A09250DD9AA9674E2075B /* extensions.swift */,
+				11499F1B0AD1B5C9D1801752597482D0 /* Keychain.swift */,
+				7B941483FDB83B3ECBDBED7854A8B8F6 /* OAuth2.swift */,
+				C934EB84E4A2836DAD590A1F9E0C5C07 /* OAuth2AuthConfig.swift */,
+				59EAF514F09D71BB6ADA09EE561F736F /* OAuth2Authorizer+iOS.swift */,
+				98D612A8273475A705F19AD0A9631C57 /* OAuth2AuthorizerUI.swift */,
+				09A83DB69DB06DF0BB8DB8FFE2E48FFC /* OAuth2AuthRequest.swift */,
+				745DCF5D3384DC812B3B9E07F6AB7AF4 /* OAuth2Base.swift */,
+				57A1E0AF2E073474106A2C80E58FD4CB /* OAuth2ClientConfig.swift */,
+				A9484A3A72D37B2D71EFD2102C0F5563 /* OAuth2ClientCredentials.swift */,
+				1BE55CD8696A22B5D84040BC0F570C62 /* OAuth2ClientCredentialsReddit.swift */,
+				8E15C4762A7B38EA6B9A7C0BDF9FFB6A /* OAuth2CodeGrant.swift */,
+				CC2FAD9A97F26BB911D20E9850974890 /* OAuth2CodeGrantAzure.swift */,
+				5650F5E8B48012F755C610770BF8C185 /* OAuth2CodeGrantBasicAuth.swift */,
+				69C307401AF16FAF4F345827C751829D /* OAuth2CodeGrantFacebook.swift */,
+				88BDF63873177C8771BABF8523D8D0C3 /* OAuth2CodeGrantLinkedIn.swift */,
+				13E0FC3735EDE35073C30FAFE1F4E0EA /* OAuth2CodeGrantNoTokenType.swift */,
+				0D1304BF3B8978E31C787B9E46433CFA /* OAuth2CustomAuthorizer+iOS.swift */,
+				60D53A48AA9A4F97C8E24AA5D8B11AF7 /* OAuth2CustomAuthorizerUI.swift */,
+				AC545380A5F48DA195522396595C5E0F /* OAuth2DataLoader.swift */,
+				7AF362CF8A5ACA0DD9B632D346FC28FE /* OAuth2DataLoaderSessionTaskDelegate.swift */,
+				A01F0CEFE350338320AC0721F0E940FC /* OAuth2DataRequest.swift */,
+				475656D00A31C61169CF027ABAE65361 /* OAuth2DebugURLSessionDelegate.swift */,
+				9A3AAE01F105905D38BD6CFBA4E52B4E /* OAuth2DynReg.swift */,
+				2A337F65C7F85623BB56176CACF3A630 /* OAuth2Error.swift */,
+				A474728CE72F3DA67B4C8458892170D9 /* OAuth2ImplicitGrant.swift */,
+				4C55AC89F8DBC9F3B1C0B58D97E5B8F7 /* OAuth2KeychainAccount.swift */,
+				1D3EB8326DF2B6E8F281A756D1B7052D /* OAuth2Logger.swift */,
+				6978BEBAEBA288599C66D4327979931F /* OAuth2PasswordGrant.swift */,
+				344707DA2E2DC2D58D85EF314FA0A599 /* OAuth2Requestable.swift */,
+				2FD4601B3DC92DFD6B06472686245BE2 /* OAuth2RequestPerformer.swift */,
+				4BD4E724F49F8EAEF7B2D8786128B805 /* OAuth2Response.swift */,
+				F2D7FD8EF2815F5FDA40295C657A2E8F /* OAuth2Securable.swift */,
+				0704C9E07309727E27C50957E90165ED /* OAuth2WebViewController.swift */,
+				9569D41645912873BB366F0AAB6902ED /* Support Files */,
+			);
+			name = p2.OAuth2;
+			path = p2.OAuth2;
+			sourceTree = "<group>";
+		};
+		F6D01BFDC6FF88B64D7E27EFCA9575B0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA22BF64A672DFFB1AA4A576E716A1AC /* Info.plist */,
+				1A09A81458230418136291B4A90F6793 /* SwiftyJSON.modulemap */,
+				120E3ADEC94EBDCDB4A906E18AF288E2 /* SwiftyJSON.xcconfig */,
+				520B685F04D419F47A339B0CE16980F5 /* SwiftyJSON-dummy.m */,
+				4DC1314A3EDB17C9D3C53EEB7E2831D9 /* SwiftyJSON-prefix.pch */,
+				A9EDF640BA36B5998AFFFF08A4ABD4D2 /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		08FD383229E9B00AD0012FC4E3F115E6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1C75217B7D2CDED554EBA156BE765B9 /* SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3654A06FB7DFFA32FA50697B0029805C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				726DA3C6B9CC16A489534A9A8C9F2EED /* Pods-email-to-calendar-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		681211636EDD7BB98E6815C1B666784F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD0609C89501AD5E1A720F0D3AF8E134 /* Pods-email-to-calendarUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC123C86723EA5719D710C8CC47D5FCB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D95B893326D4A6BDB6EED45ED8884E /* p2.OAuth2-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD015846E49F4B16CB8E06A81A0A5DA0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				705474263F087D04F875CA7CAC2E97BA /* Pods-email-to-calendarTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		29EEEC9E0608911AEE79862A99EEA2B5 /* p2.OAuth2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 336E0E3526D83089E6292031FA06725D /* Build configuration list for PBXNativeTarget "p2.OAuth2" */;
+			buildPhases = (
+				E62871D86723A9FF987944D931D27048 /* Sources */,
+				184C10D3BE648B8139CEDF10122BC241 /* Frameworks */,
+				CC123C86723EA5719D710C8CC47D5FCB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = p2.OAuth2;
+			productName = p2.OAuth2;
+			productReference = 20CDB88D371F78C6B44C0BC44E5C629A /* p2_OAuth2.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2C40189A9059B0296DA5E79101B6B5ED /* Pods-email-to-calendarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AEA12BC5C9B910A353389AB698CFBDC /* Build configuration list for PBXNativeTarget "Pods-email-to-calendarUITests" */;
+			buildPhases = (
+				46882B6C760366D18C557418F95D13C4 /* Sources */,
+				81BF8F7489ADCF95FB87239C1CA9F5F5 /* Frameworks */,
+				681211636EDD7BB98E6815C1B666784F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00CBBDC857CF04F1046FDFFCF6A087F3 /* PBXTargetDependency */,
+			);
+			name = "Pods-email-to-calendarUITests";
+			productName = "Pods-email-to-calendarUITests";
+			productReference = 6A1DFBAB636A29732BF99B64E67BF384 /* Pods_email_to_calendarUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		39E08CEBA67EA6919640F4B2186080A7 /* Pods-email-to-calendarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9F542CBF577824CC60589FEEE8404FA /* Build configuration list for PBXNativeTarget "Pods-email-to-calendarTests" */;
+			buildPhases = (
+				810B4DF27E50CC0B6FAF75820B70D340 /* Sources */,
+				6652B669D498B43D247622D10DB2F59A /* Frameworks */,
+				DD015846E49F4B16CB8E06A81A0A5DA0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF6FF2F813A8F4F278411FDCE5DD57AD /* PBXTargetDependency */,
+			);
+			name = "Pods-email-to-calendarTests";
+			productName = "Pods-email-to-calendarTests";
+			productReference = F1AACFE300B66455936CEAD6B8A3E630 /* Pods_email_to_calendarTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A053B4D5BF2CB89E9CC64D3BAF61DBAA /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2492144ED96758359E92C94AEBFE532E /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				43686A3673D99EFFF604D55ECDB6EEE3 /* Sources */,
+				A202C314F5A7720155B87E40F439781F /* Frameworks */,
+				08FD383229E9B00AD0012FC4E3F115E6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = 84E2097A0CD31117494A44CBA67BA394 /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DCF81A747842819B58FE6D34C2FE725E /* Pods-email-to-calendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B414D8B2DA26946A7004F1EBE71621A7 /* Build configuration list for PBXNativeTarget "Pods-email-to-calendar" */;
+			buildPhases = (
+				F6859AF4E2A68FDB460058ED3590234E /* Sources */,
+				BA473C5C59C2D5053FFCC321CEF4E581 /* Frameworks */,
+				3654A06FB7DFFA32FA50697B0029805C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7112695C222688CB2BA8ADFB519F43A5 /* PBXTargetDependency */,
+				8B1DB6ECB3E9182928598A8F84E1EF43 /* PBXTargetDependency */,
+			);
+			name = "Pods-email-to-calendar";
+			productName = "Pods-email-to-calendar";
+			productReference = 7EECD176985FF49E2B66CA2746D16A3F /* Pods_email_to_calendar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 2BB6F7A9D39E503E122A45E63710A35C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				29EEEC9E0608911AEE79862A99EEA2B5 /* p2.OAuth2 */,
+				DCF81A747842819B58FE6D34C2FE725E /* Pods-email-to-calendar */,
+				39E08CEBA67EA6919640F4B2186080A7 /* Pods-email-to-calendarTests */,
+				2C40189A9059B0296DA5E79101B6B5ED /* Pods-email-to-calendarUITests */,
+				A053B4D5BF2CB89E9CC64D3BAF61DBAA /* SwiftyJSON */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43686A3673D99EFFF604D55ECDB6EEE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93A5B8720094959D340457E57C18CA49 /* SwiftyJSON-dummy.m in Sources */,
+				D512C43B9E7318F04CABDB84507FD24B /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46882B6C760366D18C557418F95D13C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847297965254C6356B97C38E80C2C9A4 /* Pods-email-to-calendarUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		810B4DF27E50CC0B6FAF75820B70D340 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DD5443730327E91278515198B4A4C33 /* Pods-email-to-calendarTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E62871D86723A9FF987944D931D27048 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C001AFF697F797F5096922545E552D0 /* extensions.swift in Sources */,
+				B4C3402F29859D4BF4F26A08ECB3B588 /* Keychain.swift in Sources */,
+				1A1CE4C08DD07FB8172885C3B3946199 /* OAuth2.swift in Sources */,
+				4FF92FED760D6E8319677A6296D89239 /* OAuth2AuthConfig.swift in Sources */,
+				45C70001311261A434EFCBAD2FDDBADC /* OAuth2Authorizer+iOS.swift in Sources */,
+				FD79919D27FE73C0D57909A589BA0223 /* OAuth2AuthorizerUI.swift in Sources */,
+				DAADCA0717B2FE3CD732B3BF7CB76CDE /* OAuth2AuthRequest.swift in Sources */,
+				DB735B23877FBD274E56CC18A0A593B7 /* OAuth2Base.swift in Sources */,
+				FB374781A63DABB41F1E475A755CCC1B /* OAuth2ClientConfig.swift in Sources */,
+				87738DF9A4DEDCBF52325FD54E1D8DA2 /* OAuth2ClientCredentials.swift in Sources */,
+				401843BECD354D037793A51BE9CA31D4 /* OAuth2ClientCredentialsReddit.swift in Sources */,
+				7F1CFEEC47875FCA7F8897BF9D16D143 /* OAuth2CodeGrant.swift in Sources */,
+				535D7C94DA870C225B8729B302C4FE24 /* OAuth2CodeGrantAzure.swift in Sources */,
+				BF04DD3C793DE52E4D5FFB9374310349 /* OAuth2CodeGrantBasicAuth.swift in Sources */,
+				2355056918C6803C037B2229A4C3ECF8 /* OAuth2CodeGrantFacebook.swift in Sources */,
+				49B0FC48074234E25C103ED8DCE42FE8 /* OAuth2CodeGrantLinkedIn.swift in Sources */,
+				FBE40DBA2239200DFFB61BA15568F4BA /* OAuth2CodeGrantNoTokenType.swift in Sources */,
+				07F2A8C963908BAA16678C5F863C3698 /* OAuth2CustomAuthorizer+iOS.swift in Sources */,
+				4A8A5BBF9FAE61D5E6D3FB31C68BD393 /* OAuth2CustomAuthorizerUI.swift in Sources */,
+				F4107F7E282091A3C4ABB1A3B1CB8EF8 /* OAuth2DataLoader.swift in Sources */,
+				796F9F73AFBF07E9B6EC763352578547 /* OAuth2DataLoaderSessionTaskDelegate.swift in Sources */,
+				F59B56CC3B962B893B27121E7EB8FE3B /* OAuth2DataRequest.swift in Sources */,
+				EA266D05C93DDC91544F9B45AA5E7018 /* OAuth2DebugURLSessionDelegate.swift in Sources */,
+				D676EAB1DC3D4334360FECB7A9EF967B /* OAuth2DynReg.swift in Sources */,
+				4DEA2A8CB60FF265DAC91CCA24D98B19 /* OAuth2Error.swift in Sources */,
+				20E9B6355F6B4E520B07404CEF2865B1 /* OAuth2ImplicitGrant.swift in Sources */,
+				26D34729E612FAFA1475CAD66E3D1747 /* OAuth2KeychainAccount.swift in Sources */,
+				04460BEBC4AA15A8ED913ADFF369086C /* OAuth2Logger.swift in Sources */,
+				F04498D16E3067EE84FADF219EE9A681 /* OAuth2PasswordGrant.swift in Sources */,
+				E4DBD6FD7B2FB7B51A03ECEEA4C4DE0B /* OAuth2Requestable.swift in Sources */,
+				09510457DC2AFAF0CD9BD8A328FA9D8E /* OAuth2RequestPerformer.swift in Sources */,
+				220942F3BA5AA539E8CC888F289C2123 /* OAuth2Response.swift in Sources */,
+				1ECF5BF3F58E827A86671BB5F43A3F6C /* OAuth2Securable.swift in Sources */,
+				4EA15AB63765FCCB322D456B2FA7E86A /* OAuth2WebViewController.swift in Sources */,
+				F7B91560827800D83FA65920542682A8 /* p2.OAuth2-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6859AF4E2A68FDB460058ED3590234E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54E50F79A7B77EB92EFD0E3FE6C478F2 /* Pods-email-to-calendar-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00CBBDC857CF04F1046FDFFCF6A087F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-email-to-calendar";
+			target = DCF81A747842819B58FE6D34C2FE725E /* Pods-email-to-calendar */;
+			targetProxy = 4E8A85CCA4E1BFED18AE9BDE363A3317 /* PBXContainerItemProxy */;
+		};
+		7112695C222688CB2BA8ADFB519F43A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = A053B4D5BF2CB89E9CC64D3BAF61DBAA /* SwiftyJSON */;
+			targetProxy = 3A64B6220ADFE4CF54AB49421612D1C0 /* PBXContainerItemProxy */;
+		};
+		8B1DB6ECB3E9182928598A8F84E1EF43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = p2.OAuth2;
+			target = 29EEEC9E0608911AEE79862A99EEA2B5 /* p2.OAuth2 */;
+			targetProxy = 8DD0ABCF8A45E0869E4B617A88BFB2B0 /* PBXContainerItemProxy */;
+		};
+		CF6FF2F813A8F4F278411FDCE5DD57AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-email-to-calendar";
+			target = DCF81A747842819B58FE6D34C2FE725E /* Pods-email-to-calendar */;
+			targetProxy = 124E84BDEF680A65ACD49EA43AECA22B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0CED217726BAA9E380721DE8096FADE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 120E3ADEC94EBDCDB4A906E18AF288E2 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		137E0D629632CF520679412EA76C62BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E5A008D829612FD6097461A15FFFFAA /* p2.OAuth2.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/p2.OAuth2/p2.OAuth2-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/p2.OAuth2/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/p2.OAuth2/p2.OAuth2.modulemap";
+				PRODUCT_MODULE_NAME = p2_OAuth2;
+				PRODUCT_NAME = p2_OAuth2;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		13953DA5C928E5E7EE996DE63168A8A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 120E3ADEC94EBDCDB4A906E18AF288E2 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		30D948AE62C04225F8DEF8734A4C5A26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		36063A23B37D9A1EC3CFBE1E227AFDD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E5A008D829612FD6097461A15FFFFAA /* p2.OAuth2.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/p2.OAuth2/p2.OAuth2-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/p2.OAuth2/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/p2.OAuth2/p2.OAuth2.modulemap";
+				PRODUCT_MODULE_NAME = p2_OAuth2;
+				PRODUCT_NAME = p2_OAuth2;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		58E8AAE980427D3C6BFD03E4120B70C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF1EBA3164F2E4A143F18DC4BF17A062 /* Pods-email-to-calendarTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-email-to-calendarTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-email-to-calendarTests/Pods-email-to-calendarTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		77A89C9BAB9B206FEDF1FE3C815323C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7590CB5EAE6940D7F6D8623D1D5CE73 /* Pods-email-to-calendarTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-email-to-calendarTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-email-to-calendarTests/Pods-email-to-calendarTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9E88537B08ED4D6EB44DBA7BC8D56A35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		AD067E31843331470D37EDE7AB44BA7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82472117EFDECE38CECDAA2BEB50DD0D /* Pods-email-to-calendar.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-email-to-calendar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-email-to-calendar/Pods-email-to-calendar.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D40CEA7412FF2D30032D23BC79DA19D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D504AFFD9CE800113089BFF4A2158483 /* Pods-email-to-calendarUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-email-to-calendarUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-email-to-calendarUITests/Pods-email-to-calendarUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EED0B22A4344F4DE7E06A0A033349B4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3474DCC1A411BBC9F9C0F69D376B9C74 /* Pods-email-to-calendarUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-email-to-calendarUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-email-to-calendarUITests/Pods-email-to-calendarUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FDDC460CAC5B602EC89C0299E7AD1BC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B10A0C57847723602329EE56DB6394F2 /* Pods-email-to-calendar.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-email-to-calendar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-email-to-calendar/Pods-email-to-calendar.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2492144ED96758359E92C94AEBFE532E /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13953DA5C928E5E7EE996DE63168A8A4 /* Debug */,
+				0CED217726BAA9E380721DE8096FADE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AEA12BC5C9B910A353389AB698CFBDC /* Build configuration list for PBXNativeTarget "Pods-email-to-calendarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EED0B22A4344F4DE7E06A0A033349B4F /* Debug */,
+				D40CEA7412FF2D30032D23BC79DA19D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E88537B08ED4D6EB44DBA7BC8D56A35 /* Debug */,
+				30D948AE62C04225F8DEF8734A4C5A26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		336E0E3526D83089E6292031FA06725D /* Build configuration list for PBXNativeTarget "p2.OAuth2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36063A23B37D9A1EC3CFBE1E227AFDD8 /* Debug */,
+				137E0D629632CF520679412EA76C62BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B414D8B2DA26946A7004F1EBE71621A7 /* Build configuration list for PBXNativeTarget "Pods-email-to-calendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDDC460CAC5B602EC89C0299E7AD1BC2 /* Debug */,
+				AD067E31843331470D37EDE7AB44BA7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9F542CBF577824CC60589FEEE8404FA /* Build configuration list for PBXNativeTarget "Pods-email-to-calendarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77A89C9BAB9B206FEDF1FE3C815323C1 /* Debug */,
+				58E8AAE980427D3C6BFD03E4120B70C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

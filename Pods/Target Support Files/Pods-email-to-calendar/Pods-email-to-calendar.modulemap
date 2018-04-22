@@ -1,0 +1,6 @@
+framework module Pods_email_to_calendar {
+  umbrella header "Pods-email-to-calendar-umbrella.h"
+
+  export *
+  module * { export * }
+}
