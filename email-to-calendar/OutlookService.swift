@@ -8,6 +8,7 @@
 
 import Foundation
 import p2_OAuth2
+import SwiftyJSON
 
 class OutlookService {
     // Configure the OAuth2 framework for Azure
@@ -20,6 +21,8 @@ class OutlookService {
         "verbose": true,
         ] as OAuth2JSON
     
+    private var userEmail: String
+    
     private static var sharedService: OutlookService = {
         let service = OutlookService()
         return service
@@ -27,9 +30,73 @@ class OutlookService {
     
     private let oauth2: OAuth2CodeGrant
     
+    func makeApiCall(api: String, params: [String: String]? = nil, callback: @escaping (JSON?) -> Void) -> Void {
+        // Build the request URL
+        var urlBuilder = URLComponents(string: "https://graph.microsoft.com")!
+        urlBuilder.path = api
+        
+        if let unwrappedParams = params {
+            // Add query parameters to URL
+            urlBuilder.queryItems = [URLQueryItem]()
+            for (paramName, paramValue) in unwrappedParams {
+                urlBuilder.queryItems?.append(
+                    URLQueryItem(name: paramName, value: paramValue))
+            }
+        }
+        
+        let apiUrl = urlBuilder.url!
+        NSLog("Making request to \(apiUrl)")
+        
+        var req = oauth2.request(forURL: apiUrl)
+        req.addValue("application/json", forHTTPHeaderField: "Accept")
+        
+        let loader = OAuth2DataLoader(oauth2: oauth2)
+        
+        // Uncomment this line to get verbose request/response info in
+        // Xcode output window
+        //loader.logger = OAuth2DebugLogger(.trace)
+        
+        loader.perform(request: req) {
+            response in
+            do {
+                let dict = try response.responseJSON()
+                DispatchQueue.main.async {
+                    let result = JSON(dict)
+                    callback(result)
+                }
+            }
+            catch let error {
+                DispatchQueue.main.async {
+                    let result = JSON(error)
+                    callback(result)
+                }
+            }
+        }
+    }
+    
+    func getUserEmail(callback: @escaping (String?) -> Void) -> Void {
+        // If we don't have the user's email, get it from
+        // the API
+        if (userEmail.isEmpty) {
+            makeApiCall(api: "/v1.0/me") {
+                result in
+                if let unwrappedResult = result {
+                    let email = unwrappedResult["userPrincipalName"].stringValue
+                    self.userEmail = email
+                    callback(email)
+                } else {
+                    callback(nil)
+                }
+            }
+        } else {
+            callback(userEmail)
+        }
+    }
+    
     private init() {
         oauth2 = OAuth2CodeGrant(settings: OutlookService.oauth2Settings)
         oauth2.authConfig.authorizeEmbedded = true
+        userEmail = ""
     }
     
     class func shared() -> OutlookService {

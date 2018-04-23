@@ -36,15 +36,29 @@ class AccountViewController: UIViewController {
                 } else {
                     NSLog("Successfully logged in.")
                     self.setLogInState(loggedIn: true)
+                    self.loadUserData()
                 }
             }
         }
     }
     
+    func loadUserData() {
+        service.getUserEmail() {
+            email in
+            if let unwrappedEmail = email {
+                NSLog("Hello \(unwrappedEmail)")
+            }
+        }
+    }
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         setLogInState(loggedIn: service.isLoggedIn)
+        if (service.isLoggedIn) {
+            loadUserData()
+        }
     }
 
     override func didReceiveMemoryWarning() {
