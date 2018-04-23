@@ -131,4 +131,17 @@ class OutlookService {
     func logout() -> Void {
         oauth2.forgetTokens()
     }
+    
+    func getInboxMessages(callback: @escaping (JSON?) -> Void) -> Void {
+        let apiParams = [
+            "$select": "subject,receivedDateTime,from",
+            "$orderby": "receivedDateTime DESC",
+            "$top": "10"
+        ]
+        
+        makeApiCall(api: "/v1.0/me/mailfolders/inbox/messages", params: apiParams) {
+            result in
+            callback(result)
+        }
+    }
 }

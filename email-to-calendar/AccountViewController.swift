@@ -47,6 +47,14 @@ class AccountViewController: UIViewController {
             email in
             if let unwrappedEmail = email {
                 NSLog("Hello \(unwrappedEmail)")
+                self.service.getInboxMessages(){
+                    messages in
+                    if let unwrappedMessages = messages {
+                        for (message) in unwrappedMessages["value"].arrayValue {
+                            NSLog(message["subject"].stringValue)
+                        }
+                    }
+                }
             }
         }
     }
