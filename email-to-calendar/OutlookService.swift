@@ -134,7 +134,7 @@ class OutlookService {
     
     func getInboxMessages(callback: @escaping (JSON?) -> Void) -> Void {
         let apiParams = [
-            "$select": "subject,receivedDateTime,from",
+            "$select": "subject,receivedDateTime,from, body",
             "$orderby": "receivedDateTime DESC",
             "$top": "10"
         ]

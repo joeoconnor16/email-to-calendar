@@ -52,6 +52,8 @@ class AccountViewController: UIViewController {
                     if let unwrappedMessages = messages {
                         for (message) in unwrappedMessages["value"].arrayValue {
                             NSLog(message["subject"].stringValue)
+                            NSLog(message["from"]["emailAddress"]["address"].stringValue)
+                            NSLog(message["body"]["content"].stringValue)
                         }
                     }
                 }
