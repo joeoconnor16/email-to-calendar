@@ -8,11 +8,13 @@
 
 import UIKit
 import EventKit
+import MessageUI
 
-class AppointViewController: UIViewController, UITableViewDataSource {
+class AppointViewController: UIViewController, UITableViewDataSource, MFMailComposeViewControllerDelegate{
     
     @IBOutlet weak var pendingAppTable: UITableView!
     @IBOutlet weak var autoAppTable: UITableView!
+    
     
     let service = OutlookService.shared()
     let delegate = UIApplication.shared.delegate as! AppDelegate
@@ -46,8 +48,8 @@ class AppointViewController: UIViewController, UITableViewDataSource {
         self.navigationItem.leftBarButtonItem = editButtonItem
         
         
-        service.extractFromMessage(subject: "Meeting notes", from: "madhumita.mazumder1995@gmail.com", content: "\n________________________________________\nFrom: Alex D\nSent: Sunday, October 19, 2014 5:28 PM\nTo: Katie Jordan\nSubject: Meeting Notes\n\n Meeting at 4-25-2018 11:20 \n")
-        service.extractFromMessage(subject: "Meeting notes", from: "tarit.mazumder@gmail.com", content: "\n________________________________________\nFrom: Alex D\nSent: Sunday, October 19, 2014 5:28 PM\nTo: Katie Jordan\nSubject: Meeting Notes\n\n Meeting at 4-24-2018 11:20 \n")
+        service.extractFromMessage(subject: "Meeting notes", from: "oconnor9@ufl.edu", content: "\n________________________________________\nFrom: Alex D\nSent: Sunday, October 19, 2014 5:28 PM\nTo: Katie Jordan\nSubject: Meeting Notes\n\n Meeting at 4-25-2018 11:20 \n")
+        service.extractFromMessage(subject: "Meeting notes", from: "joconnor16.virt@gmail.com", content: "\n________________________________________\nFrom: Alex D\nSent: Sunday, October 19, 2014 5:28 PM\nTo: Katie Jordan\nSubject: Meeting Notes\n\n Meeting at 4-24-2018 11:20 \n")
  
          
         
@@ -55,7 +57,7 @@ class AppointViewController: UIViewController, UITableViewDataSource {
         var contacts:[String] = delegate.getContacts()
         
         //check for mail
-        service.checkMail()
+        service.checkMail() //add service.checkMail()
         
         
         //sort incoming appointments
@@ -87,11 +89,19 @@ class AppointViewController: UIViewController, UITableViewDataSource {
             addEvent(title: autoAppTitle[i], startDate: autoAppDate[i], notes: autoAppNotes[i])
         }
         
+        //update favorite contacts on schedule regarding auto events
+        let mailComposeViewController = configuredMailComposeViewController()
+        if MFMailComposeViewController.canSendMail() {
+            self.present(mailComposeViewController, animated: true, completion: nil)
+        } else {
+            self.showSendMailErrorAlert()
+        }
         
     }
     
+    /*
     func checkMail() -> Void {
-        /*
+        
         service.getUserEmail() {
             email in
             if let unwrappedEmail = email {
@@ -124,9 +134,10 @@ class AppointViewController: UIViewController, UITableViewDataSource {
             NSLog("End getUserEmail()")
         }
         NSLog("End checkMail()")
-        */
+        
     }
-    
+ */
+ 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -216,7 +227,39 @@ class AppointViewController: UIViewController, UITableViewDataSource {
         })
     }
     
+    func configuredMailComposeViewController()-> MFMailComposeViewController {
+        let formatter = DateFormatter()
+        // initially set the format based on your datepicker date / server String
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        
+        let myString = formatter.string(from: autoAppDate[0]) // string purpose I add here
+        // convert your string to date
+        let yourDate = formatter.date(from: myString)
+        //then again set the date format whhich type of output you need
+        formatter.dateFormat = "dd-MMM-yyyy"
+        // again convert your date to string
+        let myStringafd = formatter.string(from: yourDate!)
+        
+        let mailComposerVC = MFMailComposeViewController()
+        mailComposerVC.mailComposeDelegate = self // Extremely important to set the --mailComposeDelegate-- property, NOT the --delegate-- property
+        
+        mailComposerVC.setToRecipients(["oconnor9@ufl.edu"])
+        mailComposerVC.setSubject("Meeting update")
+        mailComposerVC.setMessageBody(myStringafd, isHTML: false)
+        
+        return mailComposerVC
+    }
     
+    
+    func showSendMailErrorAlert() {
+        let sendMailErrorAlert = UIAlertView(title: "Could Not Send Email", message: "Your device could not send e-mail.  Please check e-mail configuration and try again.", delegate: self, cancelButtonTitle: "OK")
+        sendMailErrorAlert.show()
+    }
+    
+    // MARK: MFMailComposeViewControllerDelegate Method
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true, completion: nil)
+    }
 }
 
 

@@ -308,7 +308,7 @@ class OutlookService {
     
     
    func checkMail() -> Void {
-        /*
+    /*
          self.getUserEmail() {
             email in
             if let unwrappedEmail = email {
