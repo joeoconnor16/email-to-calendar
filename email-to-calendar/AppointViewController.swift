@@ -46,16 +46,16 @@ class AppointViewController: UIViewController, UITableViewDataSource {
         self.navigationItem.leftBarButtonItem = editButtonItem
         
         
-        /* service.extractFromMessage(subject: "Meeting notes", from: "madhumita.mazumder1995@gmail.com", content: "\r\n________________________________________\r\nFrom: Alex D\r\nSent: Sunday, October 19, 2014 5:28 PM\r\nTo: Katie Jordan\r\nSubject: Meeting Notes\r\n\r\n Meeting at 4-25-2018 11:20 \r\n")
-         service.extractFromMessage(subject: "Meeting notes", from: "tarit.mazumder@gmail.com", content: "\r\n________________________________________\r\nFrom: Alex D\r\nSent: Sunday, October 19, 2014 5:28 PM\r\nTo: Katie Jordan\r\nSubject: Meeting Notes\r\n\r\n Meeting at 4-25-2018 11:20 \r\n")
- */
+        service.extractFromMessage(subject: "Meeting notes", from: "madhumita.mazumder1995@gmail.com", content: "\n________________________________________\nFrom: Alex D\nSent: Sunday, October 19, 2014 5:28 PM\nTo: Katie Jordan\nSubject: Meeting Notes\n\n Meeting at 4-25-2018 11:20 \n")
+        service.extractFromMessage(subject: "Meeting notes", from: "tarit.mazumder@gmail.com", content: "\n________________________________________\nFrom: Alex D\nSent: Sunday, October 19, 2014 5:28 PM\nTo: Katie Jordan\nSubject: Meeting Notes\n\n Meeting at 4-24-2018 11:20 \n")
+ 
          
         
         //access favorite contacts
         var contacts:[String] = delegate.getContacts()
         
         //check for mail
-        self.checkMail()
+        service.checkMail()
         
         
         //sort incoming appointments
@@ -91,7 +91,7 @@ class AppointViewController: UIViewController, UITableViewDataSource {
     }
     
     func checkMail() -> Void {
-        
+        /*
         service.getUserEmail() {
             email in
             if let unwrappedEmail = email {
@@ -124,7 +124,7 @@ class AppointViewController: UIViewController, UITableViewDataSource {
             NSLog("End getUserEmail()")
         }
         NSLog("End checkMail()")
-        
+        */
     }
     
     override func didReceiveMemoryWarning() {

@@ -184,12 +184,12 @@ class OutlookService {
     func extractFromMessage(subject:String, from:String, content:String ) -> Void{
         NSLog("Extract Message Called, content: ")
         print(content)
-        var splitString:[String] = content.components(separatedBy: "\n\r")
-        NSLog("splitString[0]")
+        var splitString:[String] = content.components(separatedBy: "\n\n")  //changed from "\n\r
+        /*NSLog("splitString[0]")
         print(splitString[0])
         NSLog("splitString[1]")
-        print(splitString[1])
-        var splitContent:[String] = splitString[0].components(separatedBy: " ")
+        print(splitString[1])*/
+        var splitContent:[String] = splitString[1].components(separatedBy: " ") //changed from splitString[0]
         var containsDate:Bool = false
         NSLog("splitContent: ")
         print(splitContent)
@@ -210,7 +210,7 @@ class OutlookService {
                     newAppNotes.append(from)
                     containsDate = true
                     NSLog("case 1")
-                    break
+                    
                 }
             }
         }
@@ -229,7 +229,7 @@ class OutlookService {
                     newAppNotes.append(from)
                     containsDate = true
                     NSLog("case 2")
-                    break
+                    
                 }
             }
         }
@@ -250,7 +250,7 @@ class OutlookService {
                     newAppNotes.append(from)
                     containsDate = true
                     NSLog("case 3")
-                    break
+                    
                 }
             }
         }
@@ -274,7 +274,7 @@ class OutlookService {
                     print(d!)
                     NSLog("newAppNotes: ")
                     print(from)
-                    break
+                    
                 }
                 
                 // check if mm.dd.yy
@@ -287,7 +287,7 @@ class OutlookService {
                     newAppNotes.append(from)
                     containsDate = true
                     NSLog("case 5")
-                    break
+                    
                 }
                 
                 // check if mm-dd-yy
@@ -300,44 +300,44 @@ class OutlookService {
                     newAppNotes.append(from)
                     containsDate = true
                     NSLog("case 6")
-                    break
+                    
                 }
             }
         }
     }
     
     
- /*   func checkMail() -> Void {
-        
+   func checkMail() -> Void {
+        /*
          self.getUserEmail() {
-         email in
-         if let unwrappedEmail = email {
-         NSLog("Hello \(unwrappedEmail)")
+            email in
+            if let unwrappedEmail = email {
+                    NSLog("Hello \(unwrappedEmail)")
          
-         self.getInboxMessages() {
-         messages in
-         if let unwrappedMessages = messages {
-            NSLog("check Mail called")
-            NSLog("unwrapped messages count: ")
-            print(unwrappedMessages.count)
-            print(unwrappedMessages)
-            for (message) in unwrappedMessages["value"].arrayValue {
-                NSLog(message["subject"].stringValue)
-               NSLog(message["from"]["emailAddress"]["address"].stringValue)
-               NSLog(message["body"]["content"].stringValue)
-                self.extractFromMessage(subject: message["subject"].stringValue, from: message["from"]["emailAddress"]["address"].stringValue, content: message["body"]["content"].stringValue)
-                NSLog("end extractFromMessage!")
-         }
-         }
-         }
-            NSLog("End getInboxMessages()")
-         }
-        NSLog("End getUserEmail()")
+                    self.getInboxMessages() {
+                        messages in
+                        if let unwrappedMessages = messages {
+                            NSLog("check Mail called")
+                            NSLog("unwrapped messages count: ")
+                            print(unwrappedMessages.count)
+                            print(unwrappedMessages)
+                            for (message) in unwrappedMessages["value"].arrayValue {
+                                NSLog(message["subject"].stringValue)
+                                NSLog(message["from"]["emailAddress"]["address"].stringValue)
+                                NSLog(message["body"]["content"].stringValue)
+                                self.extractFromMessage(subject: message["subject"].stringValue, from: message["from"]["emailAddress"]["address"].stringValue, content: message["body"]["content"].stringValue)
+                                NSLog("end extractFromMessage!")
+                            }
+                        }
+                }
+                NSLog("End getInboxMessages()")
+            }
+            NSLog("End getUserEmail()")
         }
         NSLog("End checkMail()")
-        
+ */
     }
-    */
+    
     func getAppTitles() -> Array<String> {
         return newAppTitle
     }
