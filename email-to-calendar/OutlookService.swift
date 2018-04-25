@@ -184,12 +184,12 @@ class OutlookService {
     func extractFromMessage(subject:String, from:String, content:String ) -> Void{
         NSLog("Extract Message Called, content: ")
         print(content)
-        var splitString:[String] = content.components(separatedBy: "\n\n")  //changed from "\n\r
+        var splitString:[String] = content.components(separatedBy: "\n\r")  //changed from "\n\r
         /*NSLog("splitString[0]")
         print(splitString[0])
         NSLog("splitString[1]")
         print(splitString[1])*/
-        var splitContent:[String] = splitString[1].components(separatedBy: " ") //changed from splitString[0]
+        var splitContent:[String] = splitString[0].components(separatedBy: " ") //changed from splitString[0]
         var containsDate:Bool = false
         NSLog("splitContent: ")
         print(splitContent)
