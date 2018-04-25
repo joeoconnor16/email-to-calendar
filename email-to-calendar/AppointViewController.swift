@@ -47,10 +47,10 @@ class AppointViewController: UIViewController, UITableViewDataSource, MFMailComp
         self.title = "Appointments"
         self.navigationItem.leftBarButtonItem = editButtonItem
         
-        /*
+        
         service.extractFromMessage(subject: "Meeting notes", from: "oconnor9@ufl.edu", content: "\n________________________________________\nFrom: Alex D\nSent: Sunday, October 19, 2014 5:28 PM\nTo: Katie Jordan\nSubject: Meeting Notes\n\n Meeting at 4-25-2018 11:20 \n")
         service.extractFromMessage(subject: "Meeting notes", from: "joconnor16.virt@gmail.com", content: "\n________________________________________\nFrom: Alex D\nSent: Sunday, October 19, 2014 5:28 PM\nTo: Katie Jordan\nSubject: Meeting Notes\n\n Meeting at 4-24-2018 11:20 \n")
- */
+ 
          
         
         //access favorite contacts
