@@ -236,16 +236,16 @@ class AppointViewController: UIViewController, UITableViewDataSource, MFMailComp
         // convert your string to date
         let yourDate = formatter.date(from: myString)
         //then again set the date format whhich type of output you need
-        formatter.dateFormat = "dd-MMM-yyyy"
+        formatter.dateFormat = "MM-dd-yyyy"
         // again convert your date to string
-        let myStringafd = formatter.string(from: yourDate!)
+        let myString1 = formatter.string(from: yourDate!)
         
         let mailComposerVC = MFMailComposeViewController()
         mailComposerVC.mailComposeDelegate = self // Extremely important to set the --mailComposeDelegate-- property, NOT the --delegate-- property
         
         mailComposerVC.setToRecipients(["oconnor9@ufl.edu"])
         mailComposerVC.setSubject("Meeting update")
-        mailComposerVC.setMessageBody(myStringafd, isHTML: false)
+        mailComposerVC.setMessageBody(myString1, isHTML: false)
         
         return mailComposerVC
     }
