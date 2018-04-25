@@ -49,7 +49,7 @@ class AppointViewController: UIViewController, UITableViewDataSource, MFMailComp
         
         
         service.extractFromMessage(subject: "Meeting notes", from: "oconnor9@ufl.edu", content: "\n________________________________________\nFrom: Alex D\nSent: Sunday, October 19, 2014 5:28 PM\nTo: Katie Jordan\nSubject: Meeting Notes\n\n Meeting at 4-25-2018 11:20 \n")
-        service.extractFromMessage(subject: "Meeting notes", from: "joconnor16.virt@gmail.com", content: "\n________________________________________\nFrom: Alex D\nSent: Sunday, October 19, 2014 5:28 PM\nTo: Katie Jordan\nSubject: Meeting Notes\n\n Meeting at 4-24-2018 11:20 \n")
+        service.extractFromMessage(subject: "Meeting", from: "joconnor16.virt@gmail.com", content: "\n________________________________________\nFrom: Alex D\nSent: Sunday, October 19, 2014 5:28 PM\nTo: Katie Jordan\nSubject: Meeting\n\n Meeting at 4-24-2018 11:20 \n")
  
          
         
@@ -90,13 +90,40 @@ class AppointViewController: UIViewController, UITableViewDataSource, MFMailComp
         }
         
         //update favorite contacts on schedule regarding auto events
-        let mailComposeViewController = configuredMailComposeViewController()
-        if MFMailComposeViewController.canSendMail() {
-            self.present(mailComposeViewController, animated: true, completion: nil)
-        } else {
-            self.showSendMailErrorAlert()
+        NSLog("Contacts: ")
+        print(contacts)
+        for recepient in contacts{
+            NSLog("email process logger")
+            print(recepient)
+            var count = 0
+            for sender in autoAppNotes {
+                if(sender != recepient){
+                    let subject = sender
+                    let body = autoAppDate[count]
+                    count += 1
+                    let mailComposeViewController = configuredMailComposeViewController(recepient: recepient, subject: subject, body: body)   //edit this method to have dynamic email creation
+                    if MFMailComposeViewController.canSendMail() {
+                        self.present(mailComposeViewController, animated: true, completion: nil)
+                    } else {
+                        self.showSendMailErrorAlert()
+                    }
+                }
+            }
+            count = 0
+            for sender1 in pendingAppNotes{
+                if(sender1 != recepient){
+                    let subject = sender1
+                    let body = pendingAppDate[count]
+                    count += 1
+                    let mailComposeViewController = configuredMailComposeViewController(recepient: recepient, subject: subject, body: body)   //edit this method to have dynamic email creation
+                    if MFMailComposeViewController.canSendMail() {
+                        self.present(mailComposeViewController, animated: true, completion: nil)
+                    } else {
+                        self.showSendMailErrorAlert()
+                    }
+                }
+            }
         }
-        
     }
     
     /*
@@ -227,12 +254,14 @@ class AppointViewController: UIViewController, UITableViewDataSource, MFMailComp
         })
     }
     
-    func configuredMailComposeViewController()-> MFMailComposeViewController {
+    func configuredMailComposeViewController(recepient:String, subject:String, body:Date)-> MFMailComposeViewController {
         let formatter = DateFormatter()
         // initially set the format based on your datepicker date / server String
         formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         
-        let myString = formatter.string(from: autoAppDate[0]) // string purpose I add here
+        
+        let myString = formatter.string(from: body) // string purpose I add here
+        
         // convert your string to date
         let yourDate = formatter.date(from: myString)
         //then again set the date format whhich type of output you need
@@ -243,8 +272,8 @@ class AppointViewController: UIViewController, UITableViewDataSource, MFMailComp
         let mailComposerVC = MFMailComposeViewController()
         mailComposerVC.mailComposeDelegate = self // Extremely important to set the --mailComposeDelegate-- property, NOT the --delegate-- property
         
-        mailComposerVC.setToRecipients(["oconnor9@ufl.edu"])
-        mailComposerVC.setSubject("Meeting update")
+        mailComposerVC.setToRecipients([recepient])
+        mailComposerVC.setSubject(subject)
         mailComposerVC.setMessageBody(myString1, isHTML: false)
         
         return mailComposerVC
