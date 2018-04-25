@@ -18,7 +18,6 @@
 		62CC4C2F208CCF2800994DEA /* email_to_calendarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CC4C2E208CCF2800994DEA /* email_to_calendarUITests.swift */; };
 		62CC4C3D208D504B00994DEA /* OutlookService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CC4C3C208D504B00994DEA /* OutlookService.swift */; };
 		62CC4C3F208D895500994DEA /* AppointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CC4C3E208D895500994DEA /* AppointViewController.swift */; };
-		62CC4C43208F820200994DEA /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CC4C42208F820200994DEA /* MessageCell.swift */; };
 		9EFFECC37CEDB242E6420E71 /* Pods_email_to_calendarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F15B0696829EF6F35CBCE654 /* Pods_email_to_calendarUITests.framework */; };
 		DECEAEF5DA83CFB9D9E733A1 /* Pods_email_to_calendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B444DE4570907701651A3B9E /* Pods_email_to_calendar.framework */; };
 /* End PBXBuildFile section */
@@ -60,7 +59,6 @@
 		62CC4C30208CCF2800994DEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62CC4C3C208D504B00994DEA /* OutlookService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlookService.swift; sourceTree = "<group>"; };
 		62CC4C3E208D895500994DEA /* AppointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointViewController.swift; sourceTree = "<group>"; };
-		62CC4C42208F820200994DEA /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		89172AB0025B46F7F65CE34D /* Pods-email-to-calendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-email-to-calendar.release.xcconfig"; path = "Pods/Target Support Files/Pods-email-to-calendar/Pods-email-to-calendar.release.xcconfig"; sourceTree = "<group>"; };
 		B444DE4570907701651A3B9E /* Pods_email_to_calendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_email_to_calendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4A22E7B3F520CD0F88E7735 /* Pods-email-to-calendarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-email-to-calendarTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-email-to-calendarTests/Pods-email-to-calendarTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -137,7 +135,6 @@
 				62CC4C10208CCF2700994DEA /* ContactsViewController.swift */,
 				62CC4C3C208D504B00994DEA /* OutlookService.swift */,
 				62CC4C3E208D895500994DEA /* AppointViewController.swift */,
-				62CC4C42208F820200994DEA /* MessageCell.swift */,
 				62CC4C12208CCF2700994DEA /* Main.storyboard */,
 				62CC4C15208CCF2700994DEA /* Assets.xcassets */,
 				62CC4C17208CCF2700994DEA /* LaunchScreen.storyboard */,
@@ -397,7 +394,6 @@
 				62CC4C3D208D504B00994DEA /* OutlookService.swift in Sources */,
 				62CC4C0D208CCF2700994DEA /* AppDelegate.swift in Sources */,
 				62CC4C0F208CCF2700994DEA /* AccountViewController.swift in Sources */,
-				62CC4C43208F820200994DEA /* MessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
