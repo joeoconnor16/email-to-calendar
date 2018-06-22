@@ -13,7 +13,7 @@ class ContactsViewController: UIViewController, UITableViewDataSource{
     let delegate = UIApplication.shared.delegate as! AppDelegate
     
     @IBAction func addContact(_ sender: Any) {
-        print("testing")
+        print("running")
         triggerContactInfoAlert()
     }
     @IBOutlet weak var contactsTable: UITableView!
